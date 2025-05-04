@@ -6,7 +6,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-@LunalFresh-black?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/LunalFresh)
 [![X](https://img.shields.io/badge/X-@LunalFresh-black?style=for-the-badge\&logo=x\&logoColor=white)](https://twitter.com/LunalFresh)
-[![Discord](https://img.shields.io/badge/Discord-LunalFresh%232345-black?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.gg/)
+[![Discord](https://img.shields.io/badge/Discord-LunalFresh%232345-black?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/362982715298938884)
 
 </div>
 
@@ -56,16 +56,3 @@
 > “You shouldn’t have to pay to keep your memories, your media, or your freedom.”
 
 ---
-
-## 📫 Contact
-
-<div align="center">
-
-[![Discord](https://img.shields.io/badge/Discord-LunalFresh%232345-black?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/362982715298938884)
-[![X](https://img.shields.io/badge/X-@LunalFresh-black?style=for-the-badge\&logo=x\&logoColor=white)](https://twitter.com/LunalFresh)
-
-</div>
-
----
-
-
