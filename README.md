@@ -16,9 +16,9 @@
 
 > *AI metadata fixer for Jellyfin*
 
-**Stack** › Node.js • Python • ffmpeg • OpenAI • Tailwind
+**Stack** › Python • Jellyfin API • OpenAI API 
 
-* Local‑first, embedding‑powered, server‑friendly
+* Semi-Local, Server Friendly, Metadata Updater
 
 ---
 
