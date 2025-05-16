@@ -25,7 +25,9 @@
   - Bulk scan & auto-fix for incorrect or missing overviews
   - Integrates directly with the Jellyfin API
   - Uses OpenAI for smart metadata enrichment and matching
-  - Fully local/server-friendly. Only requires an OpenAI API key and a few dollars. 
+  - Fully local/server-friendly. Only requires an OpenAI API key and a few dollars.
+- **Planned:**  
+   - Support for more providers and free/local models is on the roadmap.
 - **Tech:**  
   `Python` • `Jellyfin API` • `OpenAI API`
 - **Why It Matters:**  
