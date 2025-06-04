@@ -29,7 +29,7 @@
   - Support for more providers and free/local models is here! Supported providers are OpenAI, Anthropic, Google, and support for local models through Ollama! 
 
 - **Tech:**  
-  `Python` • `Jellyfin API` • `OpenAI API`
+  `Python` • `Jellyfin API` • `OpenAI API` • `Anthropic API` • `Google API` • `Ollama`
 - **Why It Matters:**  
   Spend less time editing metadata by hand. MetaMender helps self-hosters and archivists maintain consistent, readable, and discoverable libraries.
 
