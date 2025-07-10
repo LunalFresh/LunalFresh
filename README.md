@@ -83,4 +83,4 @@
 
 ## 🗺️ Philosophy
 
-> “You shouldn’t have to pay to keep your memories, your media, or your freedom.”
+> “You shouldn’t have to pay to keep your memories, your media, or your freedom.” 
