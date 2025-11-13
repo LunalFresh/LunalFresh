@@ -1,6 +1,6 @@
 <div align="center">
 
-# **Gage // LunalFresh**
+# **LunalFresh**
 
 *Engineer of tools that put freedom back in your hands.*
 
@@ -61,7 +61,7 @@
 - **Languages:** C, C++, C#, Python, Node.js, JavaScript, TypeScript  
 - **Frontend:** React, Next.js, Tailwind, Shadcn/UI  
 - **Backend/Tools:** CMD scripts, Supabase, REST APIs  
-- **AI:** GPT-4.1, GPT-4o, embeddings, Codex CLI  
+- **AI:** GPT-5.1, GPT-5-Codex, Codex CLI  
 - **Media:** Jellyfin, ffmpeg, custom downloaders  
 - **Modding:** Unity, MelonLoader, JSON/NPC tooling  
 
