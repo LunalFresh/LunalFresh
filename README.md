@@ -1,73 +1,99 @@
 <div align="center">
 
-# **LunalFresh**
+# LunalFresh
 
-*Engineer of tools that put freedom back in your hands.*
+### Self-hosting • media automation • building weird useful stuff
 
 [![GitHub](https://img.shields.io/badge/GitHub-@LunalFresh-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LunalFresh)
 [![X](https://img.shields.io/badge/X-@LunalFresh-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/LunalFresh)
-[![Discord](https://img.shields.io/badge/Discord-LunalFresh%232345-000000?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/362982715298938884)
+[![Discord](https://img.shields.io/badge/Discord-LunalFresh-000000?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/362982715298938884)
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## About Me
+
+I build tools, workflows, and experiments around the stuff I actually use.
+
+Most of what I make lives somewhere between **self-hosting**, **AI**, **media management**, **automation**, and **game/modding projects**. I like solving annoying problems, cleaning up messy systems, and making things feel smoother, faster, and more usable.
+
+A lot of my projects start the same way:  
+**“This should exist, so I’m making it.”**
 
 ---
+
+## Featured Project
 
 ### [MetaMender](https://github.com/LunalFresh/MetaMender)
-*AI-powered metadata fixer for Jellyfin media libraries.*
+**AI-powered metadata repair and enrichment for Jellyfin libraries**
 
-- **Purpose:**  
-  Automatically scans and enhances your local media library metadata (title, year, description, etc.) using AI. Designed to make media libraries cleaner and more usable, especially for large, messy collections.
-- **Key Features:**
-  - Bulk scan & auto-fix for incorrect or missing overviews
-  - Integrates directly with the Jellyfin API
-  - Uses OpenAI for smart metadata enrichment and matching
-  - Fully local/server-friendly. Only requires an OpenAI API key and a few dollars.  
-  - Support for more providers and free/local models is here! Supported providers are OpenAI, Anthropic, Google, and support for local models through Ollama! 
+MetaMender is built for people with real media libraries — the kind that get messy fast and are a pain to fix by hand. It scans your library, identifies bad or missing metadata, and helps clean it up automatically using AI.
 
-- **Tech:**  
-  `Python` • `Jellyfin API` • `OpenAI API` • `Anthropic API` • `Google API` • `Ollama`
-- **Why It Matters:**  
-  Spend less time editing metadata by hand. MetaMender helps self-hosters and archivists maintain consistent, readable, and discoverable libraries.
+**What it does**
+- Scans media entries for bad, missing, or inconsistent metadata
+- Repairs titles, years, descriptions, and other library info
+- Integrates directly with the Jellyfin API
+- Supports cloud and local model workflows
+- Designed to be practical for self-hosted setups, not just demos
 
----
+**Supported providers**
+- OpenAI
+- Anthropic
+- Google
+- Ollama
 
-### [SpotDL-Batch-Feeder](https://github.com/LunalFresh/SpotDL-Batch-Feeder)
-*Bulk downloader & auto-fixer for Spotify/YouTube music collections.*
+**Tech**
+`Python` • `Jellyfin API` • `OpenAI API` • `Anthropic API` • `Google API` • `Ollama`
 
-- **Purpose:**  
-  Lets you feed giant lists of tracks or playlists for hands-off music archiving, deduping, and error recovery—ideal for building huge offline collections.
-- **Key Features:**
-  - Multithreaded downloading for speed
-  - Duplicate track detection/skip
-  - Auto log & retry failures
-  - CLI-driven, cross-platform
-- **Tech:**  
-  `Python` • `CMD scripting` • `ffmpeg` • `SpotDL`
-- **Why It Matters:**  
-  Archiving your music should be easy. This tool is for serious collectors who want to automate the whole process with zero manual cleanup.
+**Why it matters**
+MetaMender cuts down the stupid amount of manual cleanup that large media libraries usually require. It’s built for self-hosters, archivists, and anyone who wants their library to stop looking half-broken.
 
 ---
 
-## ⚡ Tech Stack
+## What I Like Building
+
+- Self-hosted media tooling
+- Automation scripts and workflow helpers
+- Game/modding tools
+- UI experiments and app concepts
+- Stuff that saves time and removes friction
+
+---
+
+## Tech Stack
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=c,cpp,cs,python,nodejs,javascript,typescript,react,nextjs,tailwind,html,css,supabase,cmd,ffmpeg,unity&theme=dark" />
 </p>
 
-- **Languages:** C, C++, C#, Python, Node.js, JavaScript, TypeScript  
-- **Frontend:** React, Next.js, Tailwind, Shadcn/UI  
-- **Backend/Tools:** CMD scripts, Supabase, REST APIs  
-- **AI:** GPT-5.1, GPT-5-Codex, Codex CLI  
-- **Media:** Jellyfin, ffmpeg, custom downloaders  
-- **Modding:** Unity, MelonLoader, JSON/NPC tooling  
+**Languages**  
+C • C++ • C# • Python • JavaScript • TypeScript • Node.js
+
+**Frontend**  
+HTML • CSS • JavaScript 
+
+**Backend / Tooling**  
+Python • Node.js 
+
+**AI / Dev Tools**  
+GPT-5.4 • Codex CLI • Local model workflows
+
+**Focus Areas**  
+Jellyfin • media tooling • automation • modding • Unity • MelonLoader
 
 ---
 
-## 📊 GitHub Stats
+## Current Direction
+
+Right now I’m especially interested in:
+- Better tooling for Jellyfin and self-hosted media setups
+- Faster workflows for metadata, organization, and automation
+- Modding and companion tools for games and custom systems
+
+---
+
+## GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=LunalFresh&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" />
@@ -78,9 +104,3 @@
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=LunalFresh&theme=oldie&no-frame=true&no-bg=true&title=Stars,Commits,PR,Issues,Repositories&margin-w=10&column=4" />
 </p>
-
----
-
-## 🗺️ Philosophy
-
-> “You shouldn’t have to pay to keep your memories, your media, or your freedom.” 
