@@ -77,7 +77,7 @@ HTML • CSS • JavaScript
 Python • Node.js 
 
 **AI / Dev Tools**  
-GPT-5.4 • Codex CLI • Local model workflows
+GPT-5.5 • Codex • Local model workflows
 
 **Focus Areas**  
 Jellyfin • media tooling • automation • modding • Unity • MelonLoader
