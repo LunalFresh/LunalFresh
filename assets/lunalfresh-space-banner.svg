@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-labelledby="title description">
 
   <title id="title">LunalFresh animated star and moon banner</title>
-  <desc id="description">A hand-coded black-and-white space banner with flickering stars, a cratered moon, and several occasional scientifically inspired meteor events: short sporadic streaks, a long Earth-grazing meteor, a foreshortened meteor, and a fragmenting fireball with a fading train.</desc>
+  <desc id="description">A hand-coded black-and-white space banner with flickering stars, a NASA Moon Phase and Libration image updated daily, and occasional scientifically inspired meteor events.</desc>
 
   <defs>
     <!-- Soft white lunar glow -->
@@ -277,11 +277,15 @@
     <circle cx="672" cy="120" r="1.4" opacity="0.68"/>
   </g>
 
-  <!-- Simple full moon -->
+  <!-- BEGIN NASA MOON -->
+  <!--
+    Fallback shown until the GitHub Action runs for the first time.
+    scripts/update_moon.py replaces this entire marked block with
+    NASA's current 2026 Moon Phase and Libration frame.
+  -->
   <g id="moon" filter="url(#moonGlow)">
     <circle cx="1360" cy="204" r="122" fill="url(#moonSurface)"/>
 
-    <!-- Subtle crater detail, clipped to the visible moon -->
     <g clip-path="url(#moonClip)">
       <circle cx="1302" cy="154" r="11" fill="#a9a9a9" opacity="0.42"/>
       <circle cx="1328" cy="112" r="6" fill="#8f8f8f" opacity="0.36"/>
@@ -289,13 +293,13 @@
       <circle cx="1332" cy="248" r="8" fill="#858585" opacity="0.35"/>
       <circle cx="1312" cy="286" r="12" fill="#9c9c9c" opacity="0.30"/>
       <circle cx="1378" cy="104" r="5" fill="#868686" opacity="0.28"/>
-      <path d="M1250 226 C1280 208 1312 195 1352 185" fill="none" stroke="#777" stroke-width="2" opacity="0.20"/>
+      <path d="M1250 226 C1280 208 1312 195 1352 185"
+            fill="none" stroke="#777" stroke-width="2" opacity="0.20"/>
     </g>
   </g>
+  <!-- END NASA MOON -->
 
-
-
-  <!--
+<!--
     METEOR EVENTS
 
     Every luminous trajectory is straight. Apparent variety comes from:
