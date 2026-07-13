@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-labelledby="title description">
+
+  <title id="title">LunalFresh animated star and moon banner</title>
+  <desc id="description">A hand-coded black-and-white space banner with flickering stars, a cratered moon, and several occasional scientifically inspired meteor events: short sporadic streaks, a long Earth-grazing meteor, a foreshortened meteor, and a fragmenting fireball with a fading train.</desc>
+
+  <defs>
+    <!-- Soft white lunar glow -->
+    <filter id="moonGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Small glow for bright stars and moving objects -->
+    <filter id="smallGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Moon shading -->
+    <radialGradient id="moonSurface" cx="34%" cy="27%" r="78%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="58%" stop-color="#dedede"/>
+      <stop offset="100%" stop-color="#8f8f8f"/>
+    </radialGradient>
+</defs>
+
+  <!-- Pure black background -->
+  <rect width="1600" height="400" fill="#000"/>
+
+  <!-- Flickering star field -->
+  <g id="stars">
+    <circle cx="581" cy="139" r="0.8" fill="#fff" opacity="0.47">
+      <animate attributeName="opacity" values="0.14;0.62;0.47;0.14" keyTimes="0;0.38;0.72;1" dur="5.11s" begin="-3.02s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="83" cy="29" r="0.7" fill="#fff" opacity="0.23">
+      <animate attributeName="opacity" values="0.16;0.79;0.23;0.16" keyTimes="0;0.38;0.72;1" dur="3.51s" begin="-2.28s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1134" cy="228" r="0.8" fill="#fff" opacity="0.60">
+      <animate attributeName="opacity" values="0.23;0.70;0.60;0.23" keyTimes="0;0.38;0.72;1" dur="6.09s" begin="-0.97s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="883" cy="188" r="0.9" fill="#fff" opacity="0.44">
+      <animate attributeName="opacity" values="0.14;0.98;0.44;0.14" keyTimes="0;0.38;0.72;1" dur="3.03s" begin="-0.29s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="722" cy="323" r="0.9" fill="#fff" opacity="0.62">
+      <animate attributeName="opacity" values="0.33;0.89;0.62;0.33" keyTimes="0;0.38;0.72;1" dur="7.08s" begin="-2.68s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1148" cy="164" r="1.7" fill="#fff" opacity="0.53">
+      <animate attributeName="opacity" values="0.28;0.95;0.53;0.28" keyTimes="0;0.38;0.72;1" dur="3.48s" begin="-0.24s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1372" cy="130" r="0.7" fill="#fff" opacity="0.58">
+      <animate attributeName="opacity" values="0.34;0.94;0.58;0.34" keyTimes="0;0.38;0.72;1" dur="4.69s" begin="-3.91s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="351" cy="203" r="0.9" fill="#fff" opacity="0.61">
+      <animate attributeName="opacity" values="0.16;0.69;0.61;0.16" keyTimes="0;0.38;0.72;1" dur="5.58s" begin="-3.40s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="368" cy="287" r="1.4" fill="#fff" opacity="0.36">
+      <animate attributeName="opacity" values="0.17;0.77;0.36;0.17" keyTimes="0;0.38;0.72;1" dur="6.86s" begin="-4.72s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="467" cy="364" r="0.9" fill="#fff" opacity="0.49">
+      <animate attributeName="opacity" values="0.34;0.91;0.49;0.34" keyTimes="0;0.38;0.72;1" dur="2.75s" begin="-0.87s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="566" cy="47" r="0.8" fill="#fff" opacity="0.67">
+      <animate attributeName="opacity" values="0.36;0.82;0.67;0.36" keyTimes="0;0.38;0.72;1" dur="3.58s" begin="-1.79s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="303" cy="140" r="1.4" fill="#fff" opacity="0.50">
+      <animate attributeName="opacity" values="0.26;0.69;0.50;0.26" keyTimes="0;0.38;0.72;1" dur="6.73s" begin="-2.69s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="467" cy="84" r="1.2" fill="#fff" opacity="0.77">
+      <animate attributeName="opacity" values="0.24;0.90;0.77;0.24" keyTimes="0;0.38;0.72;1" dur="3.30s" begin="-0.53s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="806" cy="209" r="1.2" fill="#fff" opacity="0.74">
+      <animate attributeName="opacity" values="0.38;0.80;0.74;0.38" keyTimes="0;0.38;0.72;1" dur="6.56s" begin="-0.08s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1494" cy="72" r="1.2" fill="#fff" opacity="0.53">
+      <animate attributeName="opacity" values="0.31;0.90;0.53;0.31" keyTimes="0;0.38;0.72;1" dur="3.95s" begin="-0.62s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="24" cy="383" r="1.4" fill="#fff" opacity="0.32">
+      <animate attributeName="opacity" values="0.17;0.79;0.32;0.17" keyTimes="0;0.38;0.72;1" dur="6.80s" begin="-5.92s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="629" cy="341" r="1.2" fill="#fff" opacity="0.53">
+      <animate attributeName="opacity" values="0.27;0.64;0.53;0.27" keyTimes="0;0.38;0.72;1" dur="5.08s" begin="-3.96s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1104" cy="14" r="1.2" fill="#fff" opacity="0.52">
+      <animate attributeName="opacity" values="0.19;0.59;0.52;0.19" keyTimes="0;0.38;0.72;1" dur="6.64s" begin="-5.52s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="647" cy="136" r="0.7" fill="#fff" opacity="0.26">
+      <animate attributeName="opacity" values="0.17;0.82;0.26;0.17" keyTimes="0;0.38;0.72;1" dur="5.97s" begin="-4.87s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1575" cy="286" r="1.7" fill="#fff" opacity="0.77">
+      <animate attributeName="opacity" values="0.14;0.86;0.77;0.14" keyTimes="0;0.38;0.72;1" dur="3.36s" begin="-1.77s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1260" cy="230" r="1.2" fill="#fff" opacity="0.69">
+      <animate attributeName="opacity" values="0.31;0.87;0.69;0.31" keyTimes="0;0.38;0.72;1" dur="4.44s" begin="-2.98s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="782" cy="238" r="1.2" fill="#fff" opacity="0.30">
+      <animate attributeName="opacity" values="0.23;0.68;0.30;0.23" keyTimes="0;0.38;0.72;1" dur="2.70s" begin="-1.49s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="156" cy="30" r="1.7" fill="#fff" opacity="0.38">
+      <animate attributeName="opacity" values="0.19;0.80;0.38;0.19" keyTimes="0;0.38;0.72;1" dur="4.83s" begin="-2.61s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="515" cy="256" r="1.7" fill="#fff" opacity="0.47">
+      <animate attributeName="opacity" values="0.21;0.62;0.47;0.21" keyTimes="0;0.38;0.72;1" dur="4.23s" begin="-1.74s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1511" cy="41" r="1.4" fill="#fff" opacity="0.36">
+      <animate attributeName="opacity" values="0.28;0.85;0.36;0.28" keyTimes="0;0.38;0.72;1" dur="5.95s" begin="-4.76s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="241" cy="141" r="0.8" fill="#fff" opacity="0.42">
+      <animate attributeName="opacity" values="0.15;0.77;0.42;0.15" keyTimes="0;0.38;0.72;1" dur="3.88s" begin="-0.97s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="172" cy="240" r="1.7" fill="#fff" opacity="0.41">
+      <animate attributeName="opacity" values="0.34;0.81;0.41;0.34" keyTimes="0;0.38;0.72;1" dur="7.20s" begin="-6.02s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="209" cy="135" r="0.8" fill="#fff" opacity="0.67">
+      <animate attributeName="opacity" values="0.21;0.78;0.67;0.21" keyTimes="0;0.38;0.72;1" dur="6.75s" begin="-1.11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="22" cy="213" r="0.9" fill="#fff" opacity="0.54">
+      <animate attributeName="opacity" values="0.36;0.91;0.54;0.36" keyTimes="0;0.38;0.72;1" dur="5.80s" begin="-4.24s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1156" cy="352" r="1.4" fill="#fff" opacity="0.36">
+      <animate attributeName="opacity" values="0.24;0.66;0.36;0.24" keyTimes="0;0.38;0.72;1" dur="2.87s" begin="-2.11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="142" cy="174" r="0.7" fill="#fff" opacity="0.68">
+      <animate attributeName="opacity" values="0.11;0.78;0.68;0.11" keyTimes="0;0.38;0.72;1" dur="5.04s" begin="-0.29s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1058" cy="55" r="1.7" fill="#fff" opacity="0.59">
+      <animate attributeName="opacity" values="0.15;0.83;0.59;0.15" keyTimes="0;0.38;0.72;1" dur="3.68s" begin="-0.44s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="99" cy="331" r="0.7" fill="#fff" opacity="0.53">
+      <animate attributeName="opacity" values="0.22;0.83;0.53;0.22" keyTimes="0;0.38;0.72;1" dur="6.90s" begin="-1.41s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="828" cy="81" r="1.4" fill="#fff" opacity="0.69">
+      <animate attributeName="opacity" values="0.28;0.77;0.69;0.28" keyTimes="0;0.38;0.72;1" dur="6.90s" begin="-0.06s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1290" cy="302" r="0.7" fill="#fff" opacity="0.36">
+      <animate attributeName="opacity" values="0.25;0.79;0.36;0.25" keyTimes="0;0.38;0.72;1" dur="4.21s" begin="-0.29s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="518" cy="203" r="0.9" fill="#fff" opacity="0.68">
+      <animate attributeName="opacity" values="0.14;0.93;0.68;0.14" keyTimes="0;0.38;0.72;1" dur="5.41s" begin="-5.34s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1153" cy="167" r="1.4" fill="#fff" opacity="0.37">
+      <animate attributeName="opacity" values="0.13;0.95;0.37;0.13" keyTimes="0;0.38;0.72;1" dur="6.69s" begin="-4.97s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="336" cy="153" r="0.9" fill="#fff" opacity="0.42">
+      <animate attributeName="opacity" values="0.27;0.88;0.42;0.27" keyTimes="0;0.38;0.72;1" dur="5.52s" begin="-1.46s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1018" cy="142" r="1.7" fill="#fff" opacity="0.69">
+      <animate attributeName="opacity" values="0.11;0.85;0.69;0.11" keyTimes="0;0.38;0.72;1" dur="2.80s" begin="-0.93s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="285" cy="340" r="0.9" fill="#fff" opacity="0.56">
+      <animate attributeName="opacity" values="0.15;0.77;0.56;0.15" keyTimes="0;0.38;0.72;1" dur="5.18s" begin="-0.58s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="774" cy="312" r="1.2" fill="#fff" opacity="0.31">
+      <animate attributeName="opacity" values="0.14;0.63;0.31;0.14" keyTimes="0;0.38;0.72;1" dur="6.74s" begin="-5.36s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="99" cy="197" r="0.8" fill="#fff" opacity="0.51">
+      <animate attributeName="opacity" values="0.29;0.86;0.51;0.29" keyTimes="0;0.38;0.72;1" dur="5.18s" begin="-4.53s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1289" cy="93" r="0.8" fill="#fff" opacity="0.84">
+      <animate attributeName="opacity" values="0.34;0.99;0.84;0.34" keyTimes="0;0.38;0.72;1" dur="6.65s" begin="-0.16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1526" cy="184" r="1.0" fill="#fff" opacity="0.79">
+      <animate attributeName="opacity" values="0.32;0.94;0.79;0.32" keyTimes="0;0.38;0.72;1" dur="3.83s" begin="-3.01s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="239" cy="209" r="1.7" fill="#fff" opacity="0.27">
+      <animate attributeName="opacity" values="0.11;0.78;0.27;0.11" keyTimes="0;0.38;0.72;1" dur="6.82s" begin="-2.39s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="484" cy="128" r="0.7" fill="#fff" opacity="0.44">
+      <animate attributeName="opacity" values="0.28;0.75;0.44;0.28" keyTimes="0;0.38;0.72;1" dur="2.92s" begin="-2.26s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="737" cy="342" r="1.2" fill="#fff" opacity="0.63">
+      <animate attributeName="opacity" values="0.21;0.99;0.63;0.21" keyTimes="0;0.38;0.72;1" dur="6.92s" begin="-0.80s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="552" cy="105" r="1.2" fill="#fff" opacity="0.44">
+      <animate attributeName="opacity" values="0.37;0.69;0.44;0.37" keyTimes="0;0.38;0.72;1" dur="4.60s" begin="-3.35s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="237" r="1.2" fill="#fff" opacity="0.56">
+      <animate attributeName="opacity" values="0.38;0.63;0.56;0.38" keyTimes="0;0.38;0.72;1" dur="3.47s" begin="-0.15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="911" cy="14" r="1.2" fill="#fff" opacity="0.66">
+      <animate attributeName="opacity" values="0.36;0.81;0.66;0.36" keyTimes="0;0.38;0.72;1" dur="6.01s" begin="-4.03s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="763" cy="234" r="0.7" fill="#fff" opacity="0.73">
+      <animate attributeName="opacity" values="0.37;0.97;0.73;0.37" keyTimes="0;0.38;0.72;1" dur="5.65s" begin="-0.70s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="633" cy="273" r="0.9" fill="#fff" opacity="0.57">
+      <animate attributeName="opacity" values="0.29;0.72;0.57;0.29" keyTimes="0;0.38;0.72;1" dur="5.15s" begin="-0.99s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1379" cy="208" r="0.8" fill="#fff" opacity="0.51">
+      <animate attributeName="opacity" values="0.27;0.71;0.51;0.27" keyTimes="0;0.38;0.72;1" dur="2.60s" begin="-0.75s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="898" cy="310" r="1.2" fill="#fff" opacity="0.51">
+      <animate attributeName="opacity" values="0.28;0.78;0.51;0.28" keyTimes="0;0.38;0.72;1" dur="3.58s" begin="-1.70s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1525" cy="100" r="0.9" fill="#fff" opacity="0.46">
+      <animate attributeName="opacity" values="0.24;0.85;0.46;0.24" keyTimes="0;0.38;0.72;1" dur="6.36s" begin="-4.78s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="425" cy="89" r="0.7" fill="#fff" opacity="0.64">
+      <animate attributeName="opacity" values="0.11;0.99;0.64;0.11" keyTimes="0;0.38;0.72;1" dur="6.14s" begin="-2.79s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="517" cy="89" r="1.4" fill="#fff" opacity="0.83">
+      <animate attributeName="opacity" values="0.29;0.95;0.83;0.29" keyTimes="0;0.38;0.72;1" dur="6.67s" begin="-5.19s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="466" cy="104" r="1.7" fill="#fff" opacity="0.43">
+      <animate attributeName="opacity" values="0.37;0.80;0.43;0.37" keyTimes="0;0.38;0.72;1" dur="3.75s" begin="-3.18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="952" cy="82" r="1.7" fill="#fff" opacity="0.54">
+      <animate attributeName="opacity" values="0.23;0.80;0.54;0.23" keyTimes="0;0.38;0.72;1" dur="4.06s" begin="-3.07s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="924" cy="327" r="1.7" fill="#fff" opacity="0.68">
+      <animate attributeName="opacity" values="0.30;0.79;0.68;0.30" keyTimes="0;0.38;0.72;1" dur="5.12s" begin="-4.59s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1541" cy="257" r="1.0" fill="#fff" opacity="0.48">
+      <animate attributeName="opacity" values="0.17;0.68;0.48;0.17" keyTimes="0;0.38;0.72;1" dur="6.12s" begin="-3.19s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="176" cy="379" r="0.9" fill="#fff" opacity="0.62">
+      <animate attributeName="opacity" values="0.17;0.72;0.62;0.17" keyTimes="0;0.38;0.72;1" dur="2.97s" begin="-0.45s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="802" cy="369" r="0.8" fill="#fff" opacity="0.43">
+      <animate attributeName="opacity" values="0.30;0.61;0.43;0.30" keyTimes="0;0.38;0.72;1" dur="5.10s" begin="-2.12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="441" cy="229" r="1.0" fill="#fff" opacity="0.66">
+      <animate attributeName="opacity" values="0.35;0.83;0.66;0.35" keyTimes="0;0.38;0.72;1" dur="6.54s" begin="-5.01s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="797" cy="258" r="0.7" fill="#fff" opacity="0.51">
+      <animate attributeName="opacity" values="0.36;0.71;0.51;0.36" keyTimes="0;0.38;0.72;1" dur="6.70s" begin="-5.60s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1120" cy="293" r="1.7" fill="#fff" opacity="0.39">
+      <animate attributeName="opacity" values="0.27;0.67;0.39;0.27" keyTimes="0;0.38;0.72;1" dur="4.60s" begin="-0.13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="706" cy="356" r="1.4" fill="#fff" opacity="0.76">
+      <animate attributeName="opacity" values="0.32;0.88;0.76;0.32" keyTimes="0;0.38;0.72;1" dur="6.83s" begin="-6.70s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1111" cy="27" r="1.0" fill="#fff" opacity="0.36">
+      <animate attributeName="opacity" values="0.27;0.86;0.36;0.27" keyTimes="0;0.38;0.72;1" dur="4.57s" begin="-3.96s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="390" cy="39" r="0.9" fill="#fff" opacity="0.37">
+      <animate attributeName="opacity" values="0.21;0.67;0.37;0.21" keyTimes="0;0.38;0.72;1" dur="6.10s" begin="-2.31s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1558" cy="229" r="0.9" fill="#fff" opacity="0.64">
+      <animate attributeName="opacity" values="0.33;0.78;0.64;0.33" keyTimes="0;0.38;0.72;1" dur="2.84s" begin="-2.70s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="477" cy="346" r="0.7" fill="#fff" opacity="0.70">
+      <animate attributeName="opacity" values="0.32;0.85;0.70;0.32" keyTimes="0;0.38;0.72;1" dur="6.97s" begin="-1.39s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="59" cy="332" r="0.8" fill="#fff" opacity="0.28">
+      <animate attributeName="opacity" values="0.17;0.78;0.28;0.17" keyTimes="0;0.38;0.72;1" dur="6.96s" begin="-3.24s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="542" cy="202" r="0.8" fill="#fff" opacity="0.76">
+      <animate attributeName="opacity" values="0.27;0.98;0.76;0.27" keyTimes="0;0.38;0.72;1" dur="6.18s" begin="-1.01s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="655" cy="69" r="1.2" fill="#fff" opacity="0.50">
+      <animate attributeName="opacity" values="0.11;0.71;0.50;0.11" keyTimes="0;0.38;0.72;1" dur="7.01s" begin="-2.78s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1445" cy="168" r="1.2" fill="#fff" opacity="0.65">
+      <animate attributeName="opacity" values="0.33;0.91;0.65;0.33" keyTimes="0;0.38;0.72;1" dur="2.79s" begin="-1.49s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="878" cy="264" r="0.7" fill="#fff" opacity="0.64">
+      <animate attributeName="opacity" values="0.22;0.73;0.64;0.22" keyTimes="0;0.38;0.72;1" dur="4.71s" begin="-0.72s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="378" cy="281" r="1.4" fill="#fff" opacity="0.57">
+      <animate attributeName="opacity" values="0.18;0.92;0.57;0.18" keyTimes="0;0.38;0.72;1" dur="4.82s" begin="-2.10s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- A few fixed brighter stars -->
+  <g fill="#fff" filter="url(#smallGlow)">
+    <circle cx="980" cy="88" r="1.8" opacity="0.78"/>
+    <circle cx="1120" cy="286" r="1.5" opacity="0.72"/>
+    <circle cx="1520" cy="84" r="1.7" opacity="0.82"/>
+    <circle cx="672" cy="120" r="1.4" opacity="0.68"/>
+  </g>
+
+  <!-- Simple full moon -->
+  <g id="moon" filter="url(#moonGlow)">
+    <circle cx="1360" cy="204" r="122" fill="url(#moonSurface)"/>
+
+    <!-- Subtle crater detail, clipped to the visible moon -->
+    <g clip-path="url(#moonClip)">
+      <circle cx="1302" cy="154" r="11" fill="#a9a9a9" opacity="0.42"/>
+      <circle cx="1328" cy="112" r="6" fill="#8f8f8f" opacity="0.36"/>
+      <circle cx="1284" cy="214" r="16" fill="#9a9a9a" opacity="0.32"/>
+      <circle cx="1332" cy="248" r="8" fill="#858585" opacity="0.35"/>
+      <circle cx="1312" cy="286" r="12" fill="#9c9c9c" opacity="0.30"/>
+      <circle cx="1378" cy="104" r="5" fill="#868686" opacity="0.28"/>
+      <path d="M1250 226 C1280 208 1312 195 1352 185" fill="none" stroke="#777" stroke-width="2" opacity="0.20"/>
+    </g>
+  </g>
+
+
+
+  <!--
+    METEOR EVENTS
+
+    Every luminous trajectory is straight. Apparent variety comes from:
+    - different viewing angles,
+    - different visible path lengths,
+    - different entry brightness,
+    - fragmentation,
+    - and a temporary luminous train.
+
+    The long pauses are intentional so the banner stays calm.
+  -->
+
+  <!-- 1. Short sporadic meteor: brief and ordinary -->
+  <g id="meteor-short" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-72" y1="0" x2="0" y2="0"
+          stroke="url(#meteorTailShort)"
+          stroke-width="1.7"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.7" fill="#fff"/>
+
+    <animateMotion dur="17s"
+                   begin="-6s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;1;1"
+                   keyTimes="0;0.055;1"
+                   path="M -110 62 L 535 176"/>
+
+    <animate attributeName="opacity"
+             dur="17s"
+             begin="-6s"
+             repeatCount="indefinite"
+             values="0;0.88;0.88;0;0"
+             keyTimes="0;0.004;0.048;0.058;1"/>
+  </g>
+
+  <!-- 2. Long shallow Earth-grazer: slower-looking and crosses the full sky -->
+  <g id="meteor-earthgrazer" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-178" y1="0" x2="0" y2="0"
+          stroke="url(#meteorTailLong)"
+          stroke-width="1.45"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.6" fill="#fff"/>
+
+    <animateMotion dur="43s"
+                   begin="-19s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;1;1"
+                   keyTimes="0;0.075;1"
+                   path="M -190 238 L 1790 128"/>
+
+    <animate attributeName="opacity"
+             dur="43s"
+             begin="-19s"
+             repeatCount="indefinite"
+             values="0;0.72;0.88;0.76;0;0"
+             keyTimes="0;0.004;0.027;0.068;0.078;1"/>
+  </g>
+
+  <!--
+    3. Near-radiant / foreshortened meteor:
+    it moves mostly toward the viewer, so its projected streak is short.
+  -->
+  <g id="meteor-foreshortened" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-19" y1="0" x2="0" y2="0"
+          stroke="url(#meteorTailShort)"
+          stroke-width="1.8"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.9" fill="#fff">
+      <animate attributeName="r"
+               dur="31s"
+               begin="-10s"
+               repeatCount="indefinite"
+               values="1.2;1.2;2.6;1.5;1.2"
+               keyTimes="0;0.003;0.020;0.042;1"/>
+    </circle>
+
+    <animateMotion dur="31s"
+                   begin="-10s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;1;1"
+                   keyTimes="0;0.045;1"
+                   path="M 805 86 L 866 102"/>
+
+    <animate attributeName="opacity"
+             dur="31s"
+             begin="-10s"
+             repeatCount="indefinite"
+             values="0;0.92;1;0.55;0;0"
+             keyTimes="0;0.004;0.019;0.038;0.050;1"/>
+  </g>
+
+  <!-- 4. Bright fireball: flares, fragments, and leaves a fading train -->
+  <g id="fireball-main" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-128" y1="0" x2="0" y2="0"
+          stroke="url(#fireballTail)"
+          stroke-width="3"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="3.2" fill="#fff">
+      <animate attributeName="r"
+               dur="53s"
+               begin="-34s"
+               repeatCount="indefinite"
+               values="2.2;2.2;3.0;5.2;3.1;2.2"
+               keyTimes="0;0.003;0.018;0.031;0.039;1"/>
+    </circle>
+
+    <animateMotion dur="53s"
+                   begin="-34s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;1;1"
+                   keyTimes="0;0.042;1"
+                   path="M 112 360 L 976 146"/>
+
+    <animate attributeName="opacity"
+             dur="53s"
+             begin="-34s"
+             repeatCount="indefinite"
+             values="0;0.92;1;1;0.42;0;0"
+             keyTimes="0;0.003;0.018;0.032;0.039;0.045;1"/>
+  </g>
+
+  <!-- The luminous train remains briefly after the fireball passes -->
+  <path id="fireball-train"
+        class="meteor-event"
+        d="M 112 360 L 976 146"
+        pathLength="1"
+        fill="none"
+        stroke="#fff"
+        stroke-width="1.2"
+        stroke-linecap="round"
+        stroke-dasharray="1"
+        stroke-dashoffset="1"
+        opacity="0"
+        filter="url(#smallGlow)">
+
+    <animate attributeName="stroke-dashoffset"
+             dur="53s"
+             begin="-34s"
+             repeatCount="indefinite"
+             values="1;1;0;0"
+             keyTimes="0;0.003;0.042;1"/>
+
+    <animate attributeName="opacity"
+             dur="53s"
+             begin="-34s"
+             repeatCount="indefinite"
+             values="0;0;0.30;0.22;0.08;0;0"
+             keyTimes="0;0.036;0.045;0.075;0.115;0.155;1"/>
+  </path>
+
+  <!-- Three small fragments continue on nearby straight paths -->
+  <g id="fireball-fragment-a" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-31" y1="0" x2="0" y2="0"
+          stroke="url(#meteorTailShort)"
+          stroke-width="1.45"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.5" fill="#fff"/>
+
+    <animateMotion dur="53s"
+                   begin="-34s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;0;1;1"
+                   keyTimes="0;0.039;0.064;1"
+                   path="M 976 146 L 1154 122"/>
+
+    <animate attributeName="opacity"
+             dur="53s"
+             begin="-34s"
+             repeatCount="indefinite"
+             values="0;0;0.85;0.62;0;0"
+             keyTimes="0;0.039;0.043;0.060;0.069;1"/>
+  </g>
+
+  <g id="fireball-fragment-b" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-25" y1="0" x2="0" y2="0"
+          stroke="url(#meteorTailShort)"
+          stroke-width="1.2"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.25" fill="#fff"/>
+
+    <animateMotion dur="53s"
+                   begin="-34s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;0;1;1"
+                   keyTimes="0;0.040;0.067;1"
+                   path="M 976 146 L 1138 160"/>
+
+    <animate attributeName="opacity"
+             dur="53s"
+             begin="-34s"
+             repeatCount="indefinite"
+             values="0;0;0.72;0.48;0;0"
+             keyTimes="0;0.040;0.045;0.062;0.071;1"/>
+  </g>
+
+  <g id="fireball-fragment-c" class="meteor-event" opacity="0" filter="url(#smallGlow)">
+    <line x1="-19" y1="0" x2="0" y2="0"
+          stroke="url(#meteorTailShort)"
+          stroke-width="1"
+          stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1.05" fill="#fff"/>
+
+    <animateMotion dur="53s"
+                   begin="-34s"
+                   repeatCount="indefinite"
+                   rotate="auto"
+                   calcMode="linear"
+                   keyPoints="0;0;1;1"
+                   keyTimes="0;0.041;0.070;1"
+                   path="M 976 146 L 1118 184"/>
+
+    <animate attributeName="opacity"
+             dur="53s"
+             begin="-34s"
+             repeatCount="indefinite"
+             values="0;0;0.60;0.36;0;0"
+             keyTimes="0;0.041;0.047;0.064;0.074;1"/>
+  </g>
+
+  <!-- Respect reduced-motion accessibility settings -->
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateMotion, animateTransform {
+        display: none;
+      }
+
+      .meteor-event {
+        opacity: 0;
+      }
+    }
+  </style>
+
+</svg>
