@@ -2,11 +2,15 @@
 
 # LunalFresh
 
-### Self-hosting • media automation • building weird useful stuff
+### AI tooling • native apps • self-hosted systems • useful weirdness
 
-[![GitHub](https://img.shields.io/badge/GitHub-@LunalFresh-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LunalFresh)
-[![X](https://img.shields.io/badge/X-@LunalFresh-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/LunalFresh)
-[![Discord](https://img.shields.io/badge/Discord-LunalFresh-000000?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/362982715298938884)
+[![GitHub](https://img.shields.io/badge/GitHub-@LunalFresh-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/LunalFresh)
+[![X](https://img.shields.io/badge/X-@LunalFresh-000000?style=for-the-badge\&logo=x\&logoColor=white)](https://x.com/LunalFresh)
+[![Discord](https://img.shields.io/badge/Discord-LunalFresh-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.com/users/362982715298938884)
+
+<br>
+
+**I build the tools I wish already existed.**
 
 </div>
 
@@ -14,93 +18,191 @@
 
 ## About Me
 
-I build tools, workflows, and experiments around the stuff I actually use.
+I build practical tools around **AI, self-hosting, media systems, automation, remote compute, native apps, and game modding**.
 
-Most of what I make lives somewhere between **self-hosting**, **AI**, **media management**, **automation**, and **game/modding projects**. I like solving annoying problems, cleaning up messy systems, and making things feel smoother, faster, and more usable.
+Most of my projects begin with an annoying workflow, a missing feature, or a system that technically works but could work much better. I like turning those problems into tools that are fast, understandable, and genuinely useful outside of a demo.
 
-A lot of my projects start the same way:  
-**“This should exist, so I’m making it.”**
+My usual design goals are simple:
+
+* Solve a real problem
+* Keep the workflow practical
+* Make important behavior visible
+* Prefer user control over hidden magic
+* Remove friction without creating new complexity
+
+A lot of my projects start with the same thought:
+
+> **“This should exist, so I’m making it.”**
 
 ---
 
-## Featured Project
+## Currently Building
+
+### LibrarWUI
+
+**A native, Apple-first Jellyfin client for iOS**
+
+LibrarWUI is designed to make browsing and watching a self-hosted media library feel polished, responsive, and at home on Apple devices.
+
+Instead of wrapping a web interface inside an app, LibrarWUI focuses on native navigation, playback behavior, interface design, and platform integration.
+
+The goal is a Jellyfin client that feels intentionally built for iOS rather than merely adapted to it.
+
+The app is currently in active development, with a public release and open-source release planned once the project is ready.
+
+---
+
+### VastAI-MCP
+
+**An AI-facing remote compute control plane for Vast.ai**
+
+VastAI-MCP is designed around a safe and inspectable workflow for finding, comparing, planning, and managing remote GPU compute.
+
+The project aims to let AI agents work with Vast.ai without handing them unrestricted infrastructure access.
+
+Current areas of focus include:
+
+* Searching and comparing GPU offers
+* Distinguishing secure cloud and community-hosted capacity
+* Inspecting machine specifications and pricing
+* Resolving templates and environments
+* Attaching datasets
+* Creating immutable rental plans
+* Reviewing costs, risks, and warnings
+* Approval-based execution workflows
+* Spend limits and infrastructure safeguards
+
+---
+
+### HearthLM
+
+**Experiments in local AI systems, coding agents, and post-training**
+
+HearthLM is an umbrella for my work around local language models and practical AI tooling.
+
+The goal is not merely to run a local model. It is to build the systems around it that make it more capable, controllable, and useful for real work.
+
+Areas of interest include:
+
+* Coding agents
+* Local model inference
+* Tool use
+* Context management
+* Model evaluation
+* Post-training and fine-tuning
+* Dataset generation
+* Long-running agent workflows
+* Human approval and safety systems
+
+---
+
+### Game and Modding Tools
+
+I also build companion tools, workflow improvements, interface experiments, and modifications for games and custom systems.
+
+These projects usually begin with some variation of:
+
+> **“There has to be a better way to do this.”**
+
+Some current projects are still private or in active development.
+
+---
+
+## Older Projects I’m Proud Of
 
 ### [MetaMender](https://github.com/LunalFresh/MetaMender)
-**AI-powered metadata repair and enrichment for Jellyfin libraries**
 
-MetaMender is built for people with real media libraries — the kind that get messy fast and are a pain to fix by hand. It scans your library, identifies bad or missing metadata, and helps clean it up automatically using AI.
+**AI-powered metadata enrichment for Jellyfin libraries**
 
-**What it does**
-- Scans media entries for bad, missing, or inconsistent metadata
-- Repairs titles, years, descriptions, and other library info
-- Integrates directly with the Jellyfin API
-- Supports cloud and local model workflows
-- Designed to be practical for self-hosted setups, not just demos
+MetaMender scans Jellyfin libraries for missing or underdeveloped overviews, generates concise streaming-style descriptions with an AI provider, and writes the improved metadata directly back to Jellyfin.
 
-**Supported providers**
-- OpenAI
-- Anthropic
-- Google
-- Ollama
+### Highlights
 
-**Tech**
-`Python` • `Jellyfin API` • `OpenAI API` • `Anthropic API` • `Google API` • `Ollama`
+* Supports movies, series, episodes, albums, artists, books, and other configured item types
+* Detects missing or unusually short overviews
+* Integrates directly with the Jellyfin API
+* Supports hosted and locally running models
+* Creates timestamped before-and-after logs
+* Tracks input tokens, output tokens, and estimated cost
+* Runs as a lightweight Python tool without requiring another server
 
-**Why it matters**
-MetaMender cuts down the stupid amount of manual cleanup that large media libraries usually require. It’s built for self-hosters, archivists, and anyone who wants their library to stop looking half-broken.
+### Supported AI Providers
+
+* OpenAI
+* Anthropic
+* xAI / Grok
+* OpenRouter
+* LM Studio
+* Ollama
+* Generic OpenAI-compatible endpoints
+
+### Built With
+
+`Python` · `Jellyfin API` · `Hosted LLM APIs` · `Local LLMs`
+
+[View MetaMender →](https://github.com/LunalFresh/MetaMender)
 
 ---
 
 ## What I Like Building
 
-- Self-hosted media tooling
-- Automation scripts and workflow helpers
-- Game/modding tools
-- UI experiments and app concepts
-- Stuff that saves time and removes friction
+* AI tools that can safely operate real systems
+* Native apps for self-hosted services
+* Jellyfin and media-management tooling
+* Local model workflows
+* Remote GPU compute systems
+* Automation scripts and workflow helpers
+* Game and modding tools
+* UI experiments and app concepts
+* Small tools that eliminate disproportionately annoying problems
 
 ---
 
-## Tech Stack
+## Toolbox
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,cs,python,nodejs,javascript,typescript,react,nextjs,tailwind,html,css,supabase,cmd,ffmpeg,unity&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,swift,cs,c,cpp,js,ts,nodejs,react,nextjs,tailwind,html,css,supabase,powershell,ffmpeg,unity&theme=dark" alt="Technology icons" />
 </p>
 
-**Languages**  
-C • C++ • C# • Python • JavaScript • TypeScript • Node.js
-
-**Frontend**  
-HTML • CSS • JavaScript 
-
-**Backend / Tooling**  
-Python • Node.js 
-
-**AI / Dev Tools**  
-GPT-5.5 • Codex • Local model workflows
-
-**Focus Areas**  
-Jellyfin • media tooling • automation • modding • Unity • MelonLoader
+| Area                    | Technologies                                                           |
+| ----------------------- | ---------------------------------------------------------------------- |
+| **Languages**           | Python, Swift, C#, C, C++, JavaScript, TypeScript                      |
+| **Web and UI**          | React, Next.js, Tailwind CSS, HTML, CSS                                |
+| **Systems and tooling** | Node.js, PowerShell, FFmpeg, Supabase                                  |
+| **Apple development**   | Swift, SwiftUI, iOS                                                    |
+| **AI development**      | MCP, coding agents, hosted LLMs, local LLMs, post-training, evaluation |
+| **Self-hosting**        | Jellyfin, media automation, local inference                            |
+| **Game development**    | Unity, MelonLoader, modding workflows                                  |
 
 ---
 
 ## Current Direction
 
-Right now I’m especially interested in:
-- Better tooling for Jellyfin and self-hosted media setups
-- Faster workflows for metadata, organization, and automation
-- Modding and companion tools for games and custom systems
+Right now I am especially interested in:
+
+* Building a better native Jellyfin experience on Apple platforms
+* Creating safer AI-controlled infrastructure workflows
+* Improving local models through post-training and evaluation
+* Making remote GPU compute easier to search, understand, and control
+* Building practical automation for self-hosted media
+* Turning repetitive or frustrating workflows into focused tools
 
 ---
 
-## GitHub Stats
+## GitHub Activity
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LunalFresh&hide_border=true&background=000000&ring=ffffff&fire=ffffff&currStreakNum=ffffff&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=ffffff" />
-  <img src="https://github-readme-stats.vercel.app/api?username=LunalFresh&show_icons=true&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&include_all_commits=true&hide_rank=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LunalFresh&layout=compact&hide_border=true&bg_color=000000&title_color=ffffff&text_color=ffffff" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=LunalFresh&theme=oldie&no-frame=true&no-bg=true&title=Stars,Commits,PR,Issues,Repositories&margin-w=10&column=4" />
-</p>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=LunalFresh&show_icons=true&hide_border=true&hide_rank=true&include_all_commits=true&theme=transparent" alt="LunalFresh GitHub statistics" />
+
+<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=LunalFresh&hide_border=true&theme=transparent" alt="LunalFresh contribution streak" />
+
+</div>
+
+---
+
+<div align="center">
+
+### Building strange things for practical reasons.
+
+</div>
