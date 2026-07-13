@@ -15,13 +15,13 @@ import base64
 from datetime import datetime, timezone
 from pathlib import Path
 import re
+import ssl
 import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
 BANNER_PATH = Path("assets/lunalfresh-space-banner.svg")
-
 
 NASA_FRAME_DIRECTORIES = {
     2026: (
@@ -43,6 +43,11 @@ def current_frame(now: datetime) -> int:
     return int((now - start).total_seconds() // 3600) + 1
 
 
+def _read_response(request: Request, *, context=None) -> bytes:
+    with urlopen(request, timeout=45, context=context) as response:
+        return response.read()
+
+
 def download(url: str) -> bytes:
     request = Request(
         url,
@@ -55,16 +60,44 @@ def download(url: str) -> bytes:
     )
 
     try:
-        with urlopen(request, timeout=45) as response:
-            data = response.read()
+        # Use normal certificate verification first.
+        data = _read_response(request)
     except HTTPError as exc:
         raise RuntimeError(
             f"NASA returned HTTP {exc.code} for {url}"
         ) from exc
     except URLError as exc:
-        raise RuntimeError(
-            f"Could not reach NASA: {exc.reason}"
-        ) from exc
+        reason_text = str(exc.reason)
+        certificate_failed = "CERTIFICATE_VERIFY_FAILED" in reason_text
+        trusted_nasa_host = url.startswith("https://svs.gsfc.nasa.gov/")
+
+        if not (certificate_failed and trusted_nasa_host):
+            raise RuntimeError(
+                f"Could not reach NASA: {exc.reason}"
+            ) from exc
+
+        # NASA SVS is currently serving an expired certificate. Retry only
+        # this exact NASA hostname without certificate verification.
+        print(
+            "WARNING: NASA SVS certificate verification failed; "
+            "retrying this NASA host without certificate verification."
+        )
+
+        insecure_context = ssl.create_default_context()
+        insecure_context.check_hostname = False
+        insecure_context.verify_mode = ssl.CERT_NONE
+
+        try:
+            data = _read_response(request, context=insecure_context)
+        except HTTPError as retry_exc:
+            raise RuntimeError(
+                f"NASA returned HTTP {retry_exc.code} for {url}"
+            ) from retry_exc
+        except URLError as retry_exc:
+            raise RuntimeError(
+                "Could not reach NASA after certificate fallback: "
+                f"{retry_exc.reason}"
+            ) from retry_exc
 
     if not data.startswith(b"\xff\xd8"):
         raise RuntimeError("Downloaded NASA frame is not a JPEG")
