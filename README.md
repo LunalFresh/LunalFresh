@@ -1,7 +1,7 @@
 <p align="center">
   <img
     src="./assets/lunalfresh-space-banner.svg"
-    alt="LunalFresh animated star and moon banner"
+    alt="LunalFresh animated stars, meteors, and current Moon banner"
     width="100%"
   />
 </p>
