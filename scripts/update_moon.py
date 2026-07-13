@@ -22,8 +22,7 @@ from urllib.request import Request, urlopen
 
 BANNER_PATH = Path("assets/lunalfresh-space-banner.svg")
 
-# NASA publishes a separate SVS dataset each year.
-# Add the new year's path here after its annual Moon Phase page is released.
+
 NASA_FRAME_DIRECTORIES = {
     2026: (
         "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005587/"
