@@ -1,3 +1,16 @@
+<p align="center">
+  <img
+    src="./assets/lunalfresh-space-banner.svg"
+    alt="LunalFresh animated star and moon banner"
+    width="100%"
+  />
+</p>
+
+<div align="center">
+
+# LunalFresh
+
+### AI tooling • native apps • self-hosted systems • useful weirdness
 <div align="center">
 
 # LunalFresh
