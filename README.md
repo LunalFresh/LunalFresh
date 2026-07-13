@@ -191,13 +191,15 @@ Right now I am especially interested in:
 
 ## GitHub Activity
 
-<div align="center">
+## Activity
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=LunalFresh&show_icons=true&hide_border=true&hide_rank=true&include_all_commits=true&theme=transparent" alt="LunalFresh GitHub statistics" />
-
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=LunalFresh&hide_border=true&theme=transparent" alt="LunalFresh contribution streak" />
-
-</div>
+<p align="center">
+  <img
+    src="./profile-3d-contrib/profile-night-rainbow.svg"
+    alt="LunalFresh 3D contribution graph"
+    width="100%"
+  />
+</p>
 
 ---
 
