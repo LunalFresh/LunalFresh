@@ -11,11 +11,6 @@
 # LunalFresh
 
 ### AI tooling • native apps • self-hosted systems • useful weirdness
-<div align="center">
-
-# LunalFresh
-
-### AI tooling • native apps • self-hosted systems • useful weirdness
 
 [![GitHub](https://img.shields.io/badge/GitHub-@LunalFresh-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/LunalFresh)
 [![X](https://img.shields.io/badge/X-@LunalFresh-000000?style=for-the-badge\&logo=x\&logoColor=white)](https://x.com/LunalFresh)
@@ -203,8 +198,6 @@ Right now I am especially interested in:
 ---
 
 ## GitHub Activity
-
-## Activity
 
 <p align="center">
   <img
