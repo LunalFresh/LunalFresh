@@ -18,6 +18,10 @@
 
 <br>
 
+<img src="https://vbr.nathanchung.dev/badge?page_id=LunalFresh.profile&amp;lcolor=181717&amp;color=000000&amp;style=for-the-badge&amp;logo=Github&amp;logoColor=white&amp;text=VISITORS" alt="Visitors" />
+
+<br>
+
 **I build the tools I wish already existed.**
 
 </div>
