@@ -15,12 +15,9 @@
 [![GitHub](https://img.shields.io/badge/GitHub-@LunalFresh-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/LunalFresh)
 [![X](https://img.shields.io/badge/X-@LunalFresh-000000?style=for-the-badge\&logo=x\&logoColor=white)](https://x.com/LunalFresh)
 [![Discord](https://img.shields.io/badge/Discord-LunalFresh-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.com/users/362982715298938884)
-
 <br>
-
 <img src="https://vbr.nathanchung.dev/badge?page_id=LunalFresh.profile&amp;lcolor=181717&amp;color=000000&amp;style=for-the-badge&amp;logo=Github&amp;logoColor=white&amp;text=VISITORS" alt="Visitors" />
-
-<br>
+<br><br>
 
 **I build the tools I wish already existed.**
 
