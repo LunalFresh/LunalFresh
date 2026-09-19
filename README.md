@@ -184,18 +184,19 @@ MetaMender scans Jellyfin libraries for missing or underdeveloped overviews, gen
 ## Toolbox
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,swift,cs,c,cpp,js,ts,nodejs,react,nextjs,tailwind,html,css,supabase,powershell,ffmpeg,unity&theme=dark" alt="Technology icons" />
+  <img src="https://skillicons.dev/icons?i=py,rust,c,cpp,cs,lua,swift,js,ts,powershell,nodejs,react,nextjs,tailwind,html,css,supabase,cmake,git,unity&amp;theme=dark&amp;perline=10" alt="Python, Rust, C, C++, C#, Lua, Swift, JavaScript, TypeScript, PowerShell, Node.js, React, Next.js, Tailwind CSS, HTML, CSS, Supabase, CMake, Git, and Unity" />
 </p>
 
-| Area                    | Technologies                                                           |
-| ----------------------- | ---------------------------------------------------------------------- |
-| **Languages**           | Python, Swift, C#, C, C++, JavaScript, TypeScript                      |
-| **Web and UI**          | React, Next.js, Tailwind CSS, HTML, CSS                                |
-| **Systems and tooling** | Node.js, PowerShell, FFmpeg, Supabase                                  |
-| **Apple development**   | Swift, SwiftUI, iOS                                                    |
-| **AI development**      | MCP, coding agents, hosted LLMs, local LLMs, post-training, evaluation |
-| **Self-hosting**        | Jellyfin, media automation, local inference                            |
-| **Game development**    | Unity, MelonLoader, modding workflows                                  |
+| Area | Technologies |
+| --- | --- |
+| **Languages** | Python, Rust, C, C++, C#, Lua, Swift, JavaScript, TypeScript, PowerShell, HLSL |
+| **Web and UI** | React, Next.js, Tailwind CSS, HTML, CSS |
+| **Systems and tooling** | Node.js, PowerShell, CMake, MSBuild, Git, FFmpeg, Supabase |
+| **Apple development** | Swift, SwiftUI, iOS |
+| **GPU and graphics** | HLSL, Direct3D 9/12, ROCm/HIP |
+| **AI development** | MCP, coding agents, llama.cpp, hosted LLMs, local LLMs, post-training, evaluation |
+| **Self-hosting** | Jellyfin, media automation, local inference |
+| **Game development and modding** | Unity, MelonLoader, UE4SS, REFramework, XLiveLessNess |
 
 ---
 
