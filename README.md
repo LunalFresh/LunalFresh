@@ -139,7 +139,7 @@ Some current projects are still private or in active development.
 
 MetaMender scans Jellyfin libraries for missing or underdeveloped overviews, generates concise streaming-style descriptions with an AI provider, and writes the improved metadata directly back to Jellyfin.
 
-### Highlights
+#### Highlights
 
 * Supports movies, series, episodes, albums, artists, books, and other configured item types
 * Detects missing or unusually short overviews
@@ -149,7 +149,7 @@ MetaMender scans Jellyfin libraries for missing or underdeveloped overviews, gen
 * Tracks input tokens, output tokens, and estimated cost
 * Runs as a lightweight Python tool without requiring another server
 
-### Supported AI Providers
+#### Supported AI Providers
 
 * OpenAI
 * Anthropic
@@ -159,7 +159,7 @@ MetaMender scans Jellyfin libraries for missing or underdeveloped overviews, gen
 * Ollama
 * Generic OpenAI-compatible endpoints
 
-### Built With
+#### Built With
 
 `Python` · `Jellyfin API` · `Hosted LLM APIs` · `Local LLMs`
 
@@ -204,6 +204,7 @@ MetaMender scans Jellyfin libraries for missing or underdeveloped overviews, gen
 
 Right now I am especially interested in:
 
+* Restoring and improving multiplayer in older games
 * Building a better native Jellyfin experience on Apple platforms
 * Creating safer AI-controlled infrastructure workflows
 * Improving local models through post-training and evaluation
