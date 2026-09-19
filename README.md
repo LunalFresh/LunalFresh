@@ -47,6 +47,20 @@ A lot of my projects start with the same thought:
 
 ## Currently Building
 
+### [Fable III Co-op](https://github.com/LunalFresh/Fable3-Coop)
+
+**Bringing friends and online co-op back to Albion**
+
+A community mod for Fable III on PC, powered by XLiveLessNess, with in-game friend requests, invitations, joining, and host controls through a Sanctuary-style menu.
+
+This started with wanting to play together. It grew into a complete friend-request workflow and a public beta, tested across two PCs on separate networks—including location transitions and reconnecting.
+
+The beta includes a standalone installer, backups and rollback, and the matching source.
+
+**Public beta available:** [Download the beta](https://github.com/LunalFresh/Fable3-Coop/releases/tag/v2.5.0-beta.1) · [View the project](https://github.com/LunalFresh/Fable3-Coop)
+
+---
+
 ### LibrarWUI
 
 **A native, Apple-first Jellyfin client for iOS**
